@@ -3,6 +3,7 @@
 // # First tried using v8-profiler build according to http://electron.atom.io/docs/tutorial/debugging-main-process-node-inspector/#use-node-inspector-for-debugging
 // #    - $ node_modules/.bin/node-pre-gyp --target=1.4.15 --runtime=electron --fallback-to-build --directory node_modules/v8-debug/ --dist-url=https://atom.io/download/atom-shell reinstall
 // #    - $ node_modules/.bin/node-pre-gyp --target=1.4.15 --runtime=electron --fallback-to-build --directory node_modules/v8-profiler/ --dist-url=https://atom.io/download/atom-shell reinstall
+// # Then tried using modified v8-profiler from https://github.com/jrieken/v8-profiler/tree/fixRequireCall
 
 const electron = require('electron')
 // Module to control application life.
