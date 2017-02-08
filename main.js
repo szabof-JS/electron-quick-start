@@ -4,6 +4,7 @@
 // #    - $ node_modules/.bin/node-pre-gyp --target=1.4.15 --runtime=electron --fallback-to-build --directory node_modules/v8-debug/ --dist-url=https://atom.io/download/atom-shell reinstall
 // #    - $ node_modules/.bin/node-pre-gyp --target=1.4.15 --runtime=electron --fallback-to-build --directory node_modules/v8-profiler/ --dist-url=https://atom.io/download/atom-shell reinstall
 // # Then tried using modified v8-profiler from https://github.com/jrieken/v8-profiler/tree/fixRequireCall
+// # At last I tried another modified v8-profiler module from https://github.com/RisingStack/v8-profiler
 
 const electron = require('electron')
 // Module to control application life.
@@ -16,8 +17,8 @@ const url = require('url')
 
 // # Modification for profiling #1:
 const fs = require('fs');
-//const profiler = require('@risingstack/v8-profiler');
-const profiler = require('v8-profiler');
+const profiler = require('@risingstack/v8-profiler');
+//const profiler = require('v8-profiler');
 const profileName = "test";
 // # Modification for profiling #1 - END
 
