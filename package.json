@@ -16,6 +16,12 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
+  "dependencies": {
+    "electron-rebuild": "^1.5.7",
+    "node-gyp": "^3.5.0",
+    "node-inspector": "^0.12.8",
+    "node-pre-gyp": "^0.6.33"
+  },
   "devDependencies": {
     "electron": "^1.4.1"
   }
